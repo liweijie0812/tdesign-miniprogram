@@ -14,7 +14,7 @@ jobs:
       - uses: ./.github/actions/install-dep
       - run: pnpm build
 
-      - run: npm install -g npm@latest
+      - run: sudo npm install -g npm@latest
 
       - id: publish
         name: publish NPM
